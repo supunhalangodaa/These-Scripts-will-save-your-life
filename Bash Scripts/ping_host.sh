@@ -1,6 +1,6 @@
 #!/bin/bash
 date
-cat /list.txt |  while read output  //Here add the list of IPs
+cat /list.txt |  while read output  #Here add the list of IPs
 do
     ping -c 1 "$output" > /dev/null
     if [ $? -eq 0 ]; then
